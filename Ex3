@@ -1,0 +1,6 @@
+sudo echo -e "date\nsleep 3\ndate" > ~/week1/ex3.sh
+sh ex3.sh
+
+Output:
+Sun Aug 22 12:26:37 MSK 2021
+Sun Aug 22 12:26:40 MSK 2021
