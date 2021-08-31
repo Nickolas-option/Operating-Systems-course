@@ -3,6 +3,7 @@
 #include "string.h"
 #include <stdlib.h>
 int main() {
+        printf("Please, type a string to be reversed.\n");
         char str1[10];
         int stringStarted = 0;
         fgets(str1, 10, stdin);
