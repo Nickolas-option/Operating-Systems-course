@@ -19,8 +19,15 @@ void printList(struct node* n)
     }
 }
 struct LinkedList {
-
+struct node list[100];
 };
+void printList(struct node* n)
+{
+    while (n != NULL) {
+        printf(" %d ", n->data);
+        n = n->next;
+    }
+}
 
 
 int main() {
