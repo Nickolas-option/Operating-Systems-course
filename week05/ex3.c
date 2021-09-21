@@ -20,6 +20,7 @@ void *producer(void *arg) {
         pthread_cond_signal(&cConsumer);
         pthread_mutex_unlock(&lock);
         ++i;
+        printf("%d is consumed\n", i);
     }
     pthread_exit(0);
 }
