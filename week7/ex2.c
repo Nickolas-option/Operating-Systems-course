@@ -13,4 +13,5 @@ int main() {
         printf("ptr[%d] == %d\n", i, array[i]);
     }
     free(array);
+    printf("Memory is freed!");
 }
