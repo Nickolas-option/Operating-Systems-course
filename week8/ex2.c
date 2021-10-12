@@ -12,3 +12,5 @@ int main() {
         sleep(1);
     }
 }
+/* free memory is decreasing because memory is being allocated for the process
+"si" and "so" became larger and non-zero */
