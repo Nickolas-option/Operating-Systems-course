@@ -1,0 +1,2 @@
+The size of the page is 8 KB = 2^13 bits, the offset is 13 bits and the length of address is 16 bits.
+Answer: 2^3 = 8 entries are needed.
