@@ -1,0 +1,6 @@
+input = 1 2 3 3 3 1 4 4 4 5 6 7 for page number = 3 is hit/miss rate of approx. 0.71
+is is rather high due to lots of repeatitions
+
+input 1 2 3 4 5 6 7 8 9 10 rate is 0, because all the numbers are different and can not be guessed or restored from memory
+
+input 1 2 1 2 for page number bigger than 2 is 0.5, because half the numbers are the same
