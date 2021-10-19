@@ -7,6 +7,10 @@ int main() {
     printf("Enter the number of page frames:\n");
     scanf("%d", &pageNumber);
 
+    int memAcc;
+    printf("Enter the number of memory accesses:\n");
+    scanf("%d", &memAcc);
+
     FILE *inputFile = fopen("input.txt", "r");
 
     long count[pageNumber];
@@ -22,7 +26,7 @@ int main() {
     int missNumber = 0;
     int hitsNumber = 0;
 
-    for (int i = 0; i < pageNumber; i++) {
+    for (int i = 0; i < memAcc; i++) {
 
         int reference = 0;
         fscanf(inputFile, "%d", &reference);
@@ -70,7 +74,7 @@ int main() {
         count[id] = count[id] | (1 << 7);
     }
 
-    printf("Hits/Miss ratio: %f %f %f",(float)hitsNumber, (float)missNumber, (float) hitsNumber / (float) missNumber);
+    printf("Hits/Miss ratio: %f", (float) hitsNumber / (float) missNumber);
 
     fclose(inputFile);
     return 0;
