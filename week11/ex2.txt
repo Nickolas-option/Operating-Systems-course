@@ -1,0 +1,9 @@
+Root content:
+file2
+ex2.out
+.
+bin
+lib64
+file1
+..
+lib
